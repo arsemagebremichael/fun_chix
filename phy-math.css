@@ -48,7 +48,7 @@ nav {
     position: fixed;
     z-index: 10;
     background-color: rgb(36, 34, 34);
-
+   
     a {
         text-decoration: none;
         color: white;
@@ -340,6 +340,37 @@ footer {
         font-size: medium;
     }
 }
+@media (max-width: 375px) {
+    .logo {
+        img {
+            height: 4vh;
+        }
+        p {
+            font-size: medium;
+        }
+    }
+    .nav {
+        right: 0;
+        width: 70vw;
+    }
+    nav {
+        width: 100vw;
+        padding-top: 3vh;
+        height: 6vh;
+        a{
+            font-size: small;
+        }
+    }
+    .news-dropdown p {
+        font-size: small;
+    }
+
+
+
+}
+
+
+
 
 @media (min-width: 376px) and (max-width: 430px) {
     .logo {
@@ -359,17 +390,20 @@ footer {
 
     nav {
         width: 100vw;
-        padding-top: 3vh;
-        height: 6vh;
+        padding-top: 2vh;
+        height: 3vh;
 
         a {
             font-size: small;
         }
+          p{
+               font-size: small; 
+            }
     }
 
     .news-dropdown p {
         font-size: small;
-    }
+    }}
 
     @media (min-width: 431px) and (max-width: 1024px) {
         .logo {
@@ -390,15 +424,16 @@ footer {
         nav {
             width: 100vw;
             padding-top: 3vh;
-            height: 6vh;
+            height: 2vh;
+            margin-bottom: 10%;
 
             a {
                 font-size: small;
             }
+          
         }
 
         .news-dropdown p {
             font-size: small;
         }
     }
-}
