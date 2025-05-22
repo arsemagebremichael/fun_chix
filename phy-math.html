@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math and Estimations</title>
+    <link rel="stylesheet" href="phy-math.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/funchixLogo-removebg-preview.png">
+    <script src="https://kit.fontawesome.com/1731d8bcda.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="logo">
+            <p>FunChi</p>
+            <img src="images/funchixLogo-removebg-preview.png" alt="">
+        </div>
+        <nav>
+            <div class="nav">
+                 <div class="news-dropdown">  <div>
+                    <p>Home</p>
+                </div></div>
+              
+                <div class="news-dropdown">
+                    <p>News <i class="fa-solid fa-arrow-down"></i></p>
+                    <div class="dropdown">
+                        <a href="index.html">Recent News</a>
+                    </div>
+                </div>
+                <div class="news-dropdown">
+                    <p>Science<i class="fa-solid fa-arrow-down"></i></p>
+                    <div class="dropdown">
+                        <a href="index.html">Tech</a>
+                        <hr>
+                        <a href="location.html">Physics and Math</a>
+                        <hr>
+                        <a href="reviews.html">Biology</a>
+                    </div>
+                </div>
+                <a href="#about-us">About Us</a>
+            </div>
+        </nav>
+    <section class="section math-section">
+        <div class="section-header">
+            <h1>Math Explorations</h1>
+            <p>From logic puzzles to real-world estimations, math got fun!</p>
+        </div>
+        <div class="content">
+            <div class="main-image">
+                <img src="images/066d01021f6941465b30837fd3a89e1e.jpg" alt="Math classwork">
+            </div>
+            <div class="cards">
+                <div class="card popup-trigger">
+                    <img src="images/35f01357f00e53c16694bdd0b54e5160.jpg" alt="Money problem">
+                    <h3>Babysitting Estimation</h3>
+                    <p>How much does she earn in the weekends?</p>
+                </div>
+                <div class="card popup-trigger">
+                    <img src="images/76b26058d7ec123719d9fc9b3a244c52.jpg" alt="Moldy grapes">
+                    <h3>Moldy Grape Logic</h3>
+                    <p>When will they all be spoiled?</p>
+                </div>
+                <div class="card popup-trigger">
+                    <img src="images/driveless.jpg" alt="Driverless car">
+                    <h3>Driverless Market</h3>
+                    <p>Future tech meets estimation in 2028!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section physics-section"  data-aos="fade-up">
+        <div class="section-header">
+            <h1>Physics in Action</h1>
+            <p>We captured motion and forces in action with hands-on experiments!</p>
+        </div>
+        <div class="content">
+            <div class="main-image">
+                <img src="images/43488bce591bcbdce861a4a368262ee9.jpg" alt="Physics sketch">
+            </div>
+            <div class="video">
+                <video controls width="100%">
+                    <source src="images/IMG_5251.MOV" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p style="text-align: center; font-style: italic; margin-top: 10px;">Our Catapult in Action</p>
+            </div>
+        </div>
+    </section>
+    <div id="popup-modal" class="popup-modal">
+        <div class="popup-content">
+            <span id="close-popup">&times;</span>
+            <img id="popup-img" src="" alt="Popup image">
+            <p id="popup-text">This is a placeholder for more details...</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="contacts">
+                <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+                <h6>FunChix</h6>
+                <p>AkiraChix Interns</p>
+                <p>Mail:info@akirachix.com</p>
+                <p>616 Korongo Road, Off Ndege Road, Karen</p>
+            </div>
+        </div>
+        <div id="socials">
+            <p>© 2025 by FunChix. Powered and secured by AkiraChix</p>
+            <a href="https://x.com/akirachix"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com/AkiraChix/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/company/akirachix/mycompany/?viewAsMember=true"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/@AkiraChixKenya"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+
+    </script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+    const modal = document.getElementById("popup-modal");
+    const popupImg = document.getElementById("popup-img");
+    const popupText = document.getElementById("popup-text");
+    const closeBtn = document.getElementById("close-popup");
+    // Content for each modal
+     const popupDetails = {
+  "Babysitting Estimation":
+    "You babysit your sister Tachema for 10 hours/day at 12 GHS/hour. In total, you work 20 hours on weekends, earning 240 GHS. You give 10% (24 GHS) to your brother and his wife for covering Saturday night, and keep 216 GHS.",
+  "Moldy Grape Logic":
+    "You have 12 grapes, and one molds every 6 hours. The task requires logical sequencing of decay over time. This demonstrates patterns, exponential thinking, and decay models common in biology and food safety.",
+  "Driverless Market":
+    "It is estimated that by 2028, 215 million people may be using driverless cars. This was calculated based on population growth, driving eligibility, ownership, and willingness to adopt. This reflects predictive modeling and market estimation."
+};
+
+    document.querySelectorAll(".popup-trigger").forEach(card => {
+        card.addEventListener("click", () => {
+            const title = card.querySelector("h3").textContent;
+            popupImg.src = card.querySelector("img").src;
+            popupText.textContent = popupDetails[title] 
+            modal.style.display = "flex";
+        });
+    });
+    closeBtn.onclick = () => {
+        modal.style.display = "none";
+    };
+</script>
+<script>
+    AOS.init();
+ 
+</script>
+
+</body>
+
+</html>
