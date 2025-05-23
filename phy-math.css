@@ -1,6 +1,7 @@
 body {
     background-color: #F9FAF5;
     margin: 0;
+    overflow-x: hidden;
     padding: 0;
     font-family: poppins;
     color: #3D2A5E;
