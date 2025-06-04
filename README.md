@@ -20,9 +20,11 @@ Running Locally
 3. Open index.html with your browser to explore the website.
 # File Structure
 index.html – Main landing page.
-styles/ or .css files – Style sheets for the visual layout.
+
+.css files – Style sheets for the visual layout.
+
 .js files – JavaScript files for interactivity and games.
-Contributing
+# Contributing
 Contributions are welcome! If you have ideas for new features, content, or improvements, feel free to open an issue or submit a pull request.
 
 # License
